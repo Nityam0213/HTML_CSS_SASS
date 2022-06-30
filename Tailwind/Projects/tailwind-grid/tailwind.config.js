@@ -9,16 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Josefin Sans", "sans-serif"],
-        alata: ["Alata"],
-      },
-      letterSpacing: {
-        widest: ".3em",
+        sans: ["Barlow Semi Condensed", "sans-serif"],
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
